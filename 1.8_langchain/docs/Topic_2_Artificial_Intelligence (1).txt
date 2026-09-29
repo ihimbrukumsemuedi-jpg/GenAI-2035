@@ -1,0 +1,25 @@
+TOPIC 2: ARTIFICIAL INTELLIGENCE
+
+Introduction
+
+Artificial intelligence (AI) is a field of computer science concerned with developing systems that can perform tasks that normally require aspects of human intelligence. These tasks may include recognizing patterns, understanding language, making predictions, and generating content.
+
+Types and Applications
+
+AI includes areas such as machine learning, deep learning, natural language processing, and computer vision. It is used in healthcare, education, finance, transportation, agriculture, manufacturing, customer service, and scientific research.
+
+Machine Learning
+
+Machine learning allows computers to learn patterns from data rather than relying only on explicitly programmed rules. Supervised learning uses labeled examples, while unsupervised learning looks for patterns in data without predefined labels. Deep learning uses neural networks with multiple layers to learn complex representations.
+
+Benefits
+
+AI can automate repetitive tasks, analyze large datasets quickly, support decision-making, improve productivity, and assist researchers in solving complex problems. In some applications, AI can also help identify patterns that may be difficult to detect manually.
+
+Challenges and Responsible Use
+
+AI systems can produce incorrect results and may reflect biases present in their training data. Privacy, security, transparency, accountability, and the impact of automation are important considerations. Human oversight is especially important when AI is used in high-impact situations.
+
+Conclusion
+
+Artificial intelligence is becoming an important technology across many sectors. Its benefits depend on how responsibly it is designed and used. Understanding both its capabilities and limitations is essential for students, professionals, organizations, and society.
