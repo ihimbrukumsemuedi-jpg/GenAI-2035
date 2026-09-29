@@ -1,0 +1,557 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "0fb6ec56-2344-4be2-b923-c15ebb648ab2",
+   "metadata": {},
+   "source": [
+    "## Data structures"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "c9210310-f5e1-4d6a-9872-97cb336870f5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('ngwa', 'chi', 'john')\n"
+     ]
+    }
+   ],
+   "source": [
+    "#list\n",
+    "\n",
+    "names=\"ngwa\",\"chi\",\"john\"\n",
+    "print(names)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "2f926bf5-21ad-4bb5-8dee-0ff86feb0266",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "str"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(\"ngwa\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "71ce60f3-5f05-4667-8d4c-ad388691e948",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(names)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "bdc3ba12-30ee-4b8e-b8d7-0ef72346d70e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#list\n",
+    "Names = [\"sunday\",\"tuesday\",\"wednesday\",\"thursday\",\"friday\"]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1ddfd5b8-7445-4371-b929-ef411310e88c",
+   "metadata": {},
+   "source": [
+    "## accessing items"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "2ae0b2d5-20ab-44a2-9da1-d5f16ec4b6d9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'sunday'"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "Names[0]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5c0003ca-1669-4ed4-96b6-375200712616",
+   "metadata": {},
+   "source": [
+    "## Adding elements to the list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "fdf84136-cdc3-425c-b533-60ebb31defb9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Names.append(\"saturday\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "3d862144-eced-4726-a0dc-a09936e00948",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['sunday',\n",
+       " 'tuesday',\n",
+       " 'wednesday',\n",
+       " 'thursday',\n",
+       " 'friday',\n",
+       " 'saturday',\n",
+       " 'saturday']"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "Names"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "057d9437-9d3a-40af-9064-6a16a4b64b1c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter number 3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "even_numbers\n"
+     ]
+    }
+   ],
+   "source": [
+    "even_numbers =[]\n",
+    "user_input=int(input(\"enter number\"))\n",
+    "if user_input %2 ==0:\n",
+    "    even_numbers.append(user_input)\n",
+    "else:  \n",
+    "    even_numbers.append(\"4096\")\n",
+    "print(\"even_numbers\")    \n",
+    "      "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6d8061eb-0238-40ae-b3da-43a7b20098ef",
+   "metadata": {},
+   "source": [
+    "## sorting"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "81a98f33-1f7d-42bd-8f1d-b6ddc665258a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 3, 5, 7, 9, 23, 121, 503, 1111111]\n"
+     ]
+    }
+   ],
+   "source": [
+    "odd_numbers = [1,3,5,7,9,23,1111111,121,503]\n",
+    "sorted_odd_nums = sorted(odd_numbers)\n",
+    "print(sorted_odd_nums)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "330ab6bc-4bc2-45d0-bd77-af5468f2b5d4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['friday',\n",
+       " 'saturday',\n",
+       " 'saturday',\n",
+       " 'sunday',\n",
+       " 'thursday',\n",
+       " 'tuesday',\n",
+       " 'wednesday']"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sorted(Names)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c16a5a72-5981-4b0b-83da-2a65408033bc",
+   "metadata": {},
+   "source": [
+    "# delete from back\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "41260294-747f-4131-b57d-08e09248d4a5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "9"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "odd_numbers.pop()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "1faf82f0-dd1b-4c2f-b0dc-db5a41465803",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "odd_numbers.remove(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "af3eb1d5-d4d4-48aa-8661-70f3814458cf",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 3, 7]"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "odd_numbers"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "3f6b5bb1-6dc7-4e51-ae7c-f5289d6aad6f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 3, 4, 5, 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#append()\n",
+    "number=[1,2,3,3,4,5] # adds one item at the end\n",
+    "number.append(6)\n",
+    "print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "5699a3f5-3918-4da1-af4b-39eb723ecf27",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 5, 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#extend()\n",
+    "number=[1,2,3] #adds all items froom another iterable\n",
+    "number.extend([5,6])\n",
+    "print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "e167e4c1-1d59-4b4a-9c89-c09248bccaee",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 3, 4, 7, 5, 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#insert()\n",
+    "number=[1,3,4,5,6] #inserts an item at a specificposition\n",
+    "number.insert(3,7)\n",
+    "print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "f7a04e5c-c373-4aef-8dd3-6fb1c77a3b83",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['mango', 'banana', 'apple']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#remove\n",
+    "fruit=[\"mango\",\"banana\",\"orange\",\"apple\"] #\n",
+    "fruit.remove(\"orange\")\n",
+    "print(fruit)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "ac1f1636-e87d-4ea9-ac64-ed41cc333264",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#remove all\n",
+    "number=[1,12,5,6] #it deletes all the items \n",
+    "number.clear()\n",
+    "print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "95b255ac-b449-4c18-a7db-00ab2d4f9fc4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "#index()\n",
+    "number=[10,20,30] #it returns the posiiion of an item\n",
+    "print(number.index(30))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "8e3d6fb4-ce85-4f0c-a6b3-e7b9a0782f56",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "#count\n",
+    "number=[1,1,1,2,2,3,4] #it counts how many times an item appears\n",
+    "print(number.count(1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "2e4db852-0c34-4a4d-90a0-b7337d7fd5f1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 5, 6, 7]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#sort\n",
+    "number=[2,3,1,4,7,5,6] #sorts the list in ascending order\n",
+    "number.sort()\n",
+    "print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "6802c6c7-1067-43f4-814d-176919cac192",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[7, 6, 5, 4, 3, 2, 1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#sort\n",
+    "number=[2,3,1,4,7,5,6] #sorts the list in descending order\n",
+    "number.sort(reverse=True)\n",
+    "print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "bc289fc6-c925-474f-a202-d7fbdb29a15a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[6, 5, 4, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#reverse\n",
+    "number=[3,4,5,6] #reverse thelist\n",
+    "number.reverse()\n",
+    "print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "2f557f65-25e3-41c8-8892-4b90e9565a3d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#copy\n",
+    "a=[1,2,3]\n",
+    "b=a.copy()\n",
+    "print(b)\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
